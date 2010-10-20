@@ -1,0 +1,22 @@
+An example on how to put the Arduino to sleep for an arbitrary period
+of time. To wake up after a preset time the Watchdog timer is used. 
+The watchdog can be set to wake the system after a reset interval.
+The intervals are preset (see the chart below or the Watchdog ATmega
+technical specs) and depend on the voltage. To sleep for longer periods
+of times than the longest preset period (2.2s at 3V) a number of sleep
+cycles is calculated and the system is put to sleep immediately after
+waking up until all the sleep cycles are completed.
+
+This example uses code from
+
+ * Watchdog Sleep Example 
+ * Demonstrate the Watchdog and Sleep Functions
+ * Photoresistor on analog0 Piezo Speaker on pin 10
+ * 
+ * KHM 2008 / Lab3/  Martin Nawrath nawrath@khm.de
+ * Kunsthochschule fuer Medien Koeln
+ * Academy of Media Arts Cologne
+
+
+http://interface.khm.de/index.php/lab/experiments/sleep_watchdog_battery/
+
