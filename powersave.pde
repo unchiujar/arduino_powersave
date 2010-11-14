@@ -70,7 +70,7 @@ From ATMega328 Watchdog specs
  
  */
 
-int wait_periods[7];
+int wait_periods[8];
 /*
  *  Calculates how many times the watchdog should
  *  be set for each sleep state. It goes through progressively
